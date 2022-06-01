@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. 1.1</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <object type="image/svg+xml" data="src/img/logo.svg" class="wrapper__logo" >
+                SVG
+             </object>
+            <img src="src/img/bg.jpg" alt="BACKGROUND">
+        </div>
+        <div class="wrapper">
+            <main class="main-section">
+                <header class="base-caption">
+                    <h1 class="base-caption__header">Get intoo it today</h1>
+                    <label class="base-caption__description">There is no charge or obligation upon registration.</label>
+                </header>
+                <aside class="main-section__register-with-social">
+                    <button class="base-button base-button_facebook">
+                        <div class="base-button__image">
+                            <img src="src/img/facebook.svg" alt="FACEBOOK">
+                        </div>
+                        <label>Register with Facebook</label>
+                    </button>
+                    <button class="base-button base-button_in">
+                        <div class="base-button__image">
+                            <img src="src/img/linkedin.svg" alt="LinkedIn">
+                        </div>
+                        <label>Register with LinkedIn</label>
+                    </button>
+                </aside>
+                <div class="base-separator">
+                    <label class="base-separator__text">OR</label>
+                </div>
+                <form action="#" class="base-register-form" id="form">
+                    <section class="base-register-form__contacts">
+                        <div class="base-input">
+                            <label class="base-input__label" for="email">Email</label>
+                            <input id="email" class="base-input__input" type="email" name="email" required placeholder="example@example.com">
+                        </div>
+                        <div class="base-input">
+                            <label class="base-input__label" for="phone">Phone</label>
+                            <input id="phone" class="base-input__input" type="tel" name="tel" required placeholder="+7 111 222 33 44">
+                        </div>
+                    </section>
+                    <section class="base-register-form__investor-type">
+                        <header class="base-caption">
+                            <h2 class="base-caption__header">What type of investor are you?</h2>
+                            <label class="base-caption__description">Select the type of investor you are bellow.</label>
+                        </header>
+                        <div class="base-register-form__investor-type__options">
+                            <div class="base-radiobutton">
+                                <input class="base-radiobutton__input" type="radio" id="individual" name="investor" value="individual" checked>
+                                <label class="base-radiobutton__label" for="individual">Individual</label>
+                                <div class="base-info">
+                                    <div class="base-info__text">individual</div>
+                                </div>
+                            </div>
+                            <div class="base-radiobutton">
+                                <input class="base-radiobutton__input" type="radio" id="business" name="investor" value="business">
+                                <label class="base-radiobutton__label" for="business">Business</label>
+                                <div class="base-info">
+                                    <div class="base-info__text">Business</div>
+                                </div>
+                            </div>
+                            <div class="base-radiobutton">
+                                <input class="base-radiobutton__input" type="radio" id="ira" name="investor" value="ira">
+                                <label class="base-radiobutton__label" for="ira">IRA</label>
+                                <div class="base-info">
+                                    <div class="base-info__text">IRA</div>
+                                </div>
+                            </div>
+                            <div class="base-radiobutton">
+                                <input class="base-radiobutton__input" type="radio" id="trust" name="investor" value="trust">
+                                <label class="base-radiobutton__label" for="trust">Trust</label>
+                                <div class="base-info">
+                                    <div class="base-info__text">Trust</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="base-register-form__investor-type__info">
+                            <p>I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</p>
+                        </div>
+                    </section>
+                    <footer class="base-register-form__terms">
+                        <div class="base-checkbox">
+                            <input class="base-checkbox__input" type="checkbox" id="terms" name="terms" required>
+                            <label class="base-checkbox__label" for="terms">
+                                I agree to the terms and receiving notifications from intoo <a href="#">view full terms</a>
+                            </label>
+                        </div>
+                    </footer>
+                    <button class="base-button" type="submit" form="form">Create Account</button>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
